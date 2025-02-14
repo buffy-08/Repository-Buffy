@@ -1,20 +1,24 @@
-<Doctype html>
-<html lang = "it">
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra Blu</title>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Ministero dell'istruzione e del Merito</title>
     <style>
-        .barra {
-            background-color: blue; /* Colore blu di sfondo */
-            color: white; /* Colore del testo bianco */
-            text-align: center; /* Allineamento del testo al centro */
-            padding: 20px; /* Padding per distanziare il testo dai bordi */
-            font-size: 24px; /* Dimensione del testo */
-            font-family: Arial, sans-serif; /* Tipo di carattere */
-        }
-    </style>
-
-
-
-
+            .banner {
+                background-color: blue;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                font-size: 24px;
+            }
+        </style>
+</head>
+<body>
+    <div class="banner">Ministero dell'istruzione e del Merito</div>
+</body>
+<div>
+      <h1>Istituto Tecnico Tecnologico Statale</h1>
+      <h2>"Vito Volterra"</h2>
+      <h2>San Donà di Piave</h2>
+</div>
 </html>
