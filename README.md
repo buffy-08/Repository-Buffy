@@ -38,7 +38,6 @@
     </div>
     <div class="content">
         <h2>Corsi Disponibili</h2>
-        <p>Questo è un esempio di testo per i corsi disponibili nel nostro istituto.</p>
     </div>
 </body>
 </html>
