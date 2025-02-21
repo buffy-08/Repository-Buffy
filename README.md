@@ -2,23 +2,43 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Ministero dell'istruzione e del Merito</title>
+    <title>Volterra</title>
     <style>
-            .banner {
-                background-color: blue;
-                color: white;
-                text-align: center;
-                padding: 10px;
-                font-size: 24px;
-            }
-        </style>
+        .header {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+        .navbar {
+            background-color: lightgray;
+        }
+        .navbar a {
+            color: blue;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="banner">Ministero dell'istruzione e del Merito</div>
+    <div class="header">
+        <h1>Istituto Vito Volterra</h1>
+        <p>Benvenuti nel sito dell'istituto</p>
+    </div>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Chi Siamo</a>
+        <a href="#">Corsi</a>
+        <a href="#">Contatti</a>
+    </div>
+    <div class="content">
+        <h2>Corsi Disponibili</h2>
+        <p>Questo è un esempio di testo per i corsi disponibili nel nostro istituto.</p>
+    </div>
 </body>
-<div>
-      <h1>Istituto Tecnico Tecnologico Statale</h1>
-      <h2>"Vito Volterra"</h2>
-      <h2>San Donà di Piave</h2>
-</div>
 </html>
