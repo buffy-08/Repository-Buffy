@@ -2,86 +2,218 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Istituto Volterra</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; }
-        .header, .footer { background: blue; color: white; padding: 10px; }
-        .navbar { background: lightgray; padding: 10px; }
-        .navbar a { margin: 0 15px; color: blue; text-decoration: none; }
-        .image-container img { max-width: 100%; height: auto; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .barra-superiore {
+            background: #003366;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .barra-superiore img {
+            width: 50px;
+        }
+        .barra-superiore a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .contenitore {
+            text-align: center;
+            padding: 20px;
+            background: white;
+        }
+        .info-scuola {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: 20px; 
+        }
+        .info-scuola h2 {
+            font-size: 30px;
+            margin: 0;
+            font-weight: bold;
+        }
+        .info-scuola h3 {
+            font-size: 22px;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+        .info-scuola p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: center; 
+            gap: 15px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+        .menu-left {
+            display: flex;
+            gap: 15px;
+        }
+        .menu-left a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu-left a:nth-child(1) { color: red; }
+        .menu-left a:nth-child(2) { color: purple; }
+        .menu-left a:nth-child(3) { color: green; }
+        .menu-left a:nth-child(4) { color: blue; }
+        .menu-left a:nth-child(5) { color: orange; }
+        .menu-right {
+            display: flex;
+            gap: 15px;
+            color: gray;
+            margin-left: auto; 
+        }
+        .menu-right a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar {
+            background: lightgray;
+            padding: 10px;
+        }
+        .navbar a {
+            margin: 0 15px;
+            color: blue;
+            text-decoration: none;
+        }
+        .header, .footer {
+            background: blue;
+            color: white;
+            padding: 10px;
+        }
+        .quadrato {
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+        }
+        .rosso { background: red; }
+        .arancione { background: orange; }
+        .verde { background: green; }
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Istituto Volterra</h1>
+    <div class="barra-superiore">
+        <div style="display: flex; align-items: center;">
+            <img src="logo.ministero.png" alt="Logo Ministero">
+            <a href="https://www.mim.gov.it/">Ministero dell'Istruzione</a>
+        </div>
+        <div>Accedi 👤</div>
     </div>
-    <div class="navbar">
-        <a href="https://www.istitutovolterra.edu.it/la-scuola/" >Scuola</a>
-        <a href= "https://www.istitutovolterra.edu.it/servizi/" >Servizi</a>
-        <a href= "https://www.istitutovolterra.edu.it/novita/" >Novità</a>
-        <a href= "https://www.istitutovolterra.edu.it/didattica/" >Didattica</a>
+    <div class="contenitore">
+        <div class="info-scuola">
+            <img src="logo.jpg" alt="Logo Scuola" width="60">
+            <div>
+                <h2>Istituto Tecnico Tecnologico Statale</h2>
+                <h3>“Vito Volterra”</h3>
+                <p>San Donà di Piave (VE)</p>
+                <div class="menu-container">
+                    <div class="menu-left">
+                        <a href="https://www.istitutovolterra.edu.it/la-scuola/">Scuola</a>
+                        <a href="https://www.istitutovolterra.edu.it/servizi/">Servizi</a>
+                        <a href="https://www.istitutovolterra.edu.it/novita/">Novità</a>
+                        <a href="https://www.istitutovolterra.edu.it/didattica/">Didattica</a>
+                    </div>
+                    <div class="menu-right">
+                        <a href="https://www.istitutovolterra.edu.it/per-le-aziende/">Per le Aziende</a>
+                        <a href="https://web.spaggiari.eu/home/app/default/login.php?custcode=VEIT0020">Registro Elettronico</a>
+                        <a href="https://web.spaggiari.eu/sdg/app/default/comunicati.php?sede_codice=VEIT0020">Comunicati</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="navbar">
-        <a href="https://web.spaggiari.eu/home/app/default/login.php?custcode=VEIT0020" target="_blank">Registro Elettronico</a>
-    </div>
-    <h2>Benvenuti nell'Istituto Volterra</h2>
     <div class="image-container">
-        <img src="Cattura (1).PNG" alt="Descrizione immagine">
+        <img src="Cattura (1).PNG" alt="Immagine scuola">
     </div>
-</body>
-<center>
-    <head>
-        <style>
-            .quadrato { 
-                width: 150px; 
-                height: 150px; 
-                margin: 5px; 
-                padding: 10px; 
-                display: inline-block;
-                text-align: center;
-            }
-            .rosso { background: red; }
-            .arancione { background: orange; }
-            .verde { background: green; }
-        </style>
-    </head>
-    <body>
-        <center>
-            <div class="quadrato rosso">
-                <a href="https://www.istitutovolterra.edu.it/indirizzo-di-studio/grafica-e-comunicazione/">Grafica e Comunicazione</a>
-            </div>
-            <div class="quadrato arancione">
-                <a href="https://www.istitutovolterra.edu.it/indirizzo-di-studio/elettronica-ed-automazione/">Elettrotecnica e Automazione</a>
-            </div>
-            <div class="quadrato verde">
-                <a href="https://www.istitutovolterra.edu.it/indirizzo-di-studio/informatica-e-telecomunicazioni/">Informatica e Telecomunicazioni</a>
-            </div>
-        </center>
-    </body>
-    </center>
-    <center>
-    <head>
-        <title>Contatti</title>
-    </head>
-    <body style="background-color: blue; color: white; font-family: Arial;">
-        <div style="border: 2px solid white; padding: 10px; width: 300px;">
-            <h2>Contatti</h2>
-            <p>Indirizzo: Via Milano n. 9, 30027 San Donà di Piave (VE)</p>
-            <p>Codice: VETF060003</p>
-            <p>C.F.: 93030420271</p>
-            <p>Telefono: 0421329111</p>
-            <p>Fax: 0421329441</p>
-            <p>Email: VETF060003@istruzione.it</p>
-            <p>Pec: VETF060003@pec.istruzione.it</p>
-        </div>
+    <div style="display: flex; justify-content: center; gap: 20px;">
         
-        <div style="border: 2px solid white; padding: 5px; width: 200px; margin-top: 20px;">
-            <h3>Ministero dell'istruzione e del Merito</h3>
-            <p>Finanziato dall’Unione Europea</p>
-        </div>
-    </body>
-    </center>
+        <a href="https://www.istitutovolterra.edu.it/indirizzo-di-studio/grafica-e-comunicazione/" style="display: block; width: 150px; height: 150px;">
+            <img src="rosso.png" alt="Quadato Rosso" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+        
+        <a href="https://www.istitutovolterra.edu.it/indirizzo-di-studio/elettronica-ed-automazione/" style="display: block; width: 150px; height: 150px;">
+            <img src="arancione.png" alt="Quadato Arancione" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+   
+        <a href="https://www.istitutovolterra.edu.it/indirizzo-di-studio/informatica-e-telecomunicazioni/" style="display: block; width: 150px; height: 150px;">
+            <img src="verde.png" alt="Quadrato verde" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+    </div>
+              
+    <div style="background-color: blue; color: white; padding: 20px; text-align: center; margin-top: 20px;">
+        <h2>Contatti</h2>
+        <p>Indirizzo: Via Milano n. 9, 30027 San Donà di Piave (VE)</p>
+        <p>Codice: VETF060003</p>
+        <p>C.F.: 93030420271</p>
+        <p>Telefono: 0421329111</p>
+        <p>Fax: 0421329441</p>
+        <p>Email: VETF060003@istruzione.it</p>
+        <p>Pec: VETF060003@pec.istruzione.it</p>
+    </div>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #f4f4f4;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #0008ff;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: #1e90ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            background-color: #8784d1;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="https://ww2.gazzettaamministrativa.it/opencms/opencms/_gazzetta_amministrativa/amministrazione_trasparente/_veneto/_istituto_tecnico_istruzione_superiore_vito_volterra_di_san_dona___di_piave">Amministrazione Trasparente fino al 2020</a>
+        <a href="https://web.spaggiari.eu/sdg2/Trasparenza/VEIT0020">Amministrazione Trasparente</a>
+        <a href="https://www.istitutovolterra.edu.it/albo-online/">Albo Online</a>
+        <a href="https://www.istitutovolterra.edu.it/privacy-policy/">Privacy Policy</a>
+        <a href="https://www.istitutovolterra.edu.it/note-legali/">Note Legali</a>
+        <a href="https://form.agid.gov.it/view/38425af0-71a5-11ef-82c7-95790fe8da95">Dichiarazione di Accessibilità</a>
+    </nav>
+    <footer>
+        <p>Made by <a href="https://www.qweb.eu/it">Qweb WebAgency</a> - <a href="https://designers.italia.it/modelli/scuole/">Concept & Design by Designers Italia</a></p>
+    </footer>
+</body>
+</body>
 </html>
-
-
-
